@@ -51,3 +51,22 @@ footer {
     color: white;
     text-align: center;
 }
+
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.dark-mode table {
+    background-color: #2c2c2c;
+}
+
+.dark-mode th {
+    background-color: #555;
+}
+
+.dark-mode footer {
+    background-color: #111;
+}
