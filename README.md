@@ -1,6 +1,6 @@
 # Página Web Básica sobre Redes LAN
 
-Este proyecto es una página web simple escrita en HTML, CSS y JavaScript para presentar información sobre redes LAN. A continuación, se explican las etiquetas utilizadas en el código, los estilos aplicados mediante CSS y la funcionalidad añadida con JavaScript.
+Este proyecto es una página web simple escrita en HTML, CSS y JavaScript para presentar información sobre redes LAN. A continuación, se explican las etiquetas utilizadas en el código, los estilos aplicados mediante CSS y las funcionalidades añadidas con JavaScript.
 
 ## Estructura del Archivo HTML
 
@@ -15,6 +15,7 @@ Este proyecto es una página web simple escrita en HTML, CSS y JavaScript para p
 </head>
 <body>
     <button onclick="toggleDarkMode()">Cambiar Modo Claro/Oscuro</button>
+    <button onclick="scrollToTop()">Volver arriba</button>
     <!-- Contenido de la página -->
     <script src="script.js"></script>
 </body>
@@ -33,7 +34,7 @@ Este proyecto es una página web simple escrita en HTML, CSS y JavaScript para p
 | `<title>` | Define el título de la página que aparece en la pestaña del navegador. |
 | `<link rel="stylesheet" href="styles.css">` | Enlaza el archivo CSS para aplicar estilos a la página. |
 | `<body>` | Contiene el contenido visible de la página. |
-| `<button>` | Botón que activa la funcionalidad de cambiar entre modo claro y oscuro. |
+| `<button>` | Botón que activa funcionalidades JavaScript. |
 | `<script src="script.js">` | Enlaza el archivo JavaScript que proporciona funcionalidades a la página. |
 | `<h1>` | Encabezado principal de la página. |
 | `<h2>` | Subtítulos para secciones dentro de la página. |
@@ -65,9 +66,9 @@ El archivo `styles.css` define los estilos para mejorar la presentación de la p
 
 ## Funcionalidad JavaScript
 
-Se ha añadido un archivo `script.js` que contiene una funcionalidad para cambiar entre modo claro y modo oscuro en la página.
+Se ha añadido un archivo `script.js` que contiene funcionalidades interactivas para mejorar la experiencia del usuario.
 
-### Código Principal
+### Cambiar entre modo claro y oscuro
 
 ```javascript
 function toggleDarkMode() {
@@ -75,11 +76,21 @@ function toggleDarkMode() {
 }
 ```
 
-Al hacer clic en el botón "Cambiar Modo Claro/Oscuro", se alterna la clase `dark-mode` en el elemento `body`, cambiando los estilos visuales del sitio.
+Este botón alterna la clase `dark-mode` en el elemento `body`, cambiando los estilos visuales del sitio.
+
+### Volver al inicio de la página
+
+```javascript
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+```
+
+Este botón desplaza suavemente la página hacia arriba al hacer clic, útil en documentos largos.
 
 ## Uso
 
 Para ver la página:
 1. Asegúrate de que los archivos `index.html`, `styles.css` y `script.js` estén en la misma carpeta.
 2. Abre el archivo `index.html` en cualquier navegador web.
-3. Usa el botón para alternar entre modo claro y oscuro según prefieras.
+3. Usa los botones para cambiar entre modo claro/oscuro y para volver al inicio de la página fácilmente.
