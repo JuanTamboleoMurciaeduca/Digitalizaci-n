@@ -62,7 +62,19 @@ El archivo `styles.css` define los estilos para mejorar la presentación de la p
 | `table` | Aplica un diseño con bordes y fondo blanco para mejorar la visualización. |
 | `th` | Define el color de fondo de los encabezados de la tabla. |
 | `footer` | Estiliza el pie de página con un fondo oscuro y texto claro. |
+| `button` | Estiliza los botones para que sean accesibles y visualmente atractivos. |
 | `.dark-mode` | Clase que cambia el fondo y el color de texto para modo oscuro. |
+
+### Responsividad
+
+Se han añadido reglas CSS para hacer que la página se adapte correctamente a distintos tamaños de pantalla (PC, tablet, móvil). Esto se logró mediante media queries y estilos flexibles. Algunos de los cambios implementados son:
+
+| Característica | Descripción |
+|----------------|-------------|
+| `@media` queries | Ajustan el tamaño de texto, márgenes y disposición del contenido en pantallas pequeñas. |
+| Botones fluidos | Los botones se escalan correctamente en móviles. |
+| Tabla adaptable | La tabla se adapta horizontalmente y mantiene legibilidad en pantallas pequeñas. |
+| Tipografía flexible | Los encabezados y párrafos reducen su tamaño proporcionalmente según la resolución. |
 
 ## Funcionalidad JavaScript
 
@@ -94,3 +106,4 @@ Para ver la página:
 1. Asegúrate de que los archivos `index.html`, `styles.css` y `script.js` estén en la misma carpeta.
 2. Abre el archivo `index.html` en cualquier navegador web.
 3. Usa los botones para cambiar entre modo claro/oscuro y para volver al inicio de la página fácilmente.
+4. Accede desde distintos dispositivos o ajusta el tamaño de la ventana para ver el diseño responsivo en acción.
